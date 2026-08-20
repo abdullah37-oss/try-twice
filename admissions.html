@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions | IIEE</title>
+    <meta name="description" content="Apply to the B.E. in Industrial Electronics Engineering at IIEE. Check eligibility, entry tests, and processing fees." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-meta">
+          <a href="tel:+922199244218">+92 21 99244218-20</a>
+          <a href="mailto:info@iiee.edu.pk">info@iiee.edu.pk</a>
+        </div>
+        <div class="social-row">
+          <a href="https://facebook.com" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" aria-label="Instagram">◎</a>
+          <a href="https://wa.me/9232199244218" aria-label="WhatsApp">W</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="IIEE home">
+          <img src="assets/IIEE_logo_transparent.png" alt="IIEE Logo" class="brand-logo" />
+          <div class="brand-text">
+            <strong>Institute of Industrial Electronics Engineering</strong>
+            <span>Think Beyond Limits. Think IIEE.</span>
+          </div>
+        </a>
+
+        <button class="mobile-menu" type="button" aria-label="Open navigation">☰</button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="programs.html">Programs</a>
+          <a href="admissions.html" class="active">Admissions</a>
+          <a href="faculty.html">Faculty</a>
+          <a href="campus.html">Campus</a>
+          <a href="notices.html">Notices</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary nav-cta" href="admissions.html">Apply Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero small-hero">
+        <div class="container">
+          <span class="eyebrow">Admissions</span>
+          <h1>Admission process and eligibility.</h1>
+        </div>
+      </section>
+
+      <section class="section-pad">
+        <div class="container widget-shell admissions-page">
+          <div class="admissions-grid">
+            <div class="widget-panel">
+              <div class="stepper" aria-label="Application steps">
+                <span class="step active">1</span>
+                <span class="step">2</span>
+                <span class="step">3</span>
+                <span class="step">4</span>
+                <span class="step">5</span>
+                <span class="step">6</span>
+              </div>
+
+              <div id="applicationForm" class="application-form">
+                <div class="form-step active" data-step="1">
+                  <h3>Step 1: Program &amp; qualification</h3>
+                  <div class="program-choice selected">
+                    <div>
+                      <strong>B.E. Industrial Electronics Engineering</strong>
+                      <span>4-year degree program</span>
+                    </div>
+                    <span class="checkmark">✓</span>
+                  </div>
+                  <label for="qualification">Qualification type</label>
+                  <select id="qualification">
+                    <option value="FSc Pre-Engineering">FSc Pre-Engineering</option>
+                    <option value="FSc Pre-Medical/Computer Science">FSc Pre-Medical/Computer Science</option>
+                    <option value="A-Level">A-Level</option>
+                    <option value="DAE">DAE (Diploma of Associate Engineer)</option>
+                  </select>
+                </div>
+
+                <div class="form-step" data-step="2">
+                  <h3>Step 2: Eligibility requirements</h3>
+                  <div class="eligibility-box" id="eligibilityBox"></div>
+                </div>
+
+                <div class="form-step" data-step="3">
+                  <h3>Step 3: Entry test center</h3>
+                  <div class="test-center-options">
+                    <label class="option-card">
+                      <input type="radio" name="testCenter" value="NED-UET Karachi campus" checked />
+                      <span>NED-UET Karachi campus</span>
+                    </label>
+                    <label class="option-card">
+                      <input type="radio" name="testCenter" value="PCSIR Laboratories Complex, Lahore" />
+                      <span>PCSIR Laboratories Complex, Lahore</span>
+                    </label>
+                  </div>
+                  <div class="date-box">
+                    <label>Test date</label>
+                    <input type="text" value="Date to be announced" aria-label="Entry test date" readonly />
+                  </div>
+                </div>
+
+                <div class="form-step" data-step="4">
+                  <h3>Step 4: Applicant details</h3>
+                  <div class="form-grid">
+                    <label>
+                      Full name
+                      <input type="text" id="fullName" placeholder="Full name" />
+                    </label>
+                    <label>
+                      CNIC / B-Form
+                      <input type="text" id="cnic" placeholder="CNIC or B-Form number" />
+                    </label>
+                    <label>
+                      Mobile number
+                      <input type="tel" id="mobile" placeholder="11-digit mobile number" />
+                    </label>
+                    <label>
+                      Email
+                      <input type="email" id="email" placeholder="Email address" />
+                    </label>
+                    <label class="full-span">
+                      Academic documents
+                      <input type="file" id="documents" multiple />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-step" data-step="5">
+                  <h3>Step 5: Processing fee</h3>
+                  <div class="fee-choice-wrap">
+                    <label class="option-card fee-card"><input type="radio" name="applicantType" value="local" checked /> <span>Local applicant</span></label>
+                    <label class="option-card fee-card"><input type="radio" name="applicantType" value="foreign" /> <span>Foreign national / Overseas Pakistani</span></label>
+                  </div>
+                  <div class="fee-panel local-fee active" id="localFeePanel">
+                    <p>Submit Application</p>
+                    <small>A processing fee applies per the current fee schedule.</small>
+                  </div>
+                  <div class="fee-panel" id="foreignFeePanel">
+                    <p>Admission Processing Fee: USD $50 / PKR equivalent</p>
+                    <div class="bank-details">
+                      <strong>Bank transfer / Swift details</strong>
+                      <span>Bank name: To be confirmed by Admissions Office</span>
+                      <span>Swift code: To be confirmed by Admissions Office</span>
+                      <span>Account title: Institute of Industrial Electronics Engineering</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-step success-step" data-step="6">
+                  <h3>Application submitted</h3>
+                  <div class="success-box">
+                    <div class="success-icon">✓</div>
+                    <h4>Thank you for applying.</h4>
+                    <p>Your application has been submitted successfully.</p>
+                    <div class="ref-box">
+                      <span>Reference Number</span>
+                      <strong id="referenceNumber">IIEE-2026-0001</strong>
+                    </div>
+                    <div class="summary-details" id="summaryDetails"></div>
+                    <a id="whatsappLink" class="btn btn-primary" target="_blank" rel="noreferrer">Send Confirmation on WhatsApp</a>
+                  </div>
+                </div>
+
+                <div class="form-nav">
+                  <button type="button" class="btn btn-secondary" id="prevBtn">Previous</button>
+                  <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+                </div>
+              </div>
+            </div>
+
+            <aside class="info-panel">
+              <div class="info-card prominent">
+                <h3>Key dates</h3>
+                <ul>
+                  <li><span>Last date to apply</span><strong>To be announced</strong></li>
+                  <li><span>Entry test</span><strong>Date to be announced</strong></li>
+                  <li><span>IBCC equivalency deadline</span><strong>As notified</strong></li>
+                </ul>
+              </div>
+              <div class="info-card">
+                <h3>Prospectus</h3>
+                <p>Download the latest information guide for eligibility, curriculum, and facilities.</p>
+                <a href="#" class="btn btn-secondary block-btn">Download Prospectus</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/IIEE_logo_transparent.png" alt="IIEE logo" class="footer-logo" />
+            <div>
+              <strong>Institute of Industrial Electronics Engineering</strong>
+              <small>Think Beyond Limits. Think IIEE.</small>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="flagship.html">Program</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Policies</h4>
+          <ul>
+            <li><a href="#">Admissions Policy</a></li>
+            <li><a href="credibility.html">Credibility</a></li>
+            <li><a href="#">Prospectus</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+922199244218">+92 21 99244218-20</a></li>
+            <li><a href="mailto:info@iiee.edu.pk">info@iiee.edu.pk</a></li>
+            <li>Karachi, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Institute of Industrial Electronics Engineering. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
